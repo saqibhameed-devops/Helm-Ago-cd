@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: python-app-auto
+  name: python-app
 spec:
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: python-api
-          image: saqib11691/python-api:1678460111
+          image: saqib11691/python-api:1678798116
         
           ports:
             - containerPort: 5000
